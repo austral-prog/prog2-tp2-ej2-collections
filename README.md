@@ -1,6 +1,6 @@
 # Trabajo Práctico 2 - Ejercicio 2 - Java Colletions
 
-## 1.1 Lists
+## 2.1 Lists
 
 Dado la siguiente consigna, implementar las siguientes funciones:
 * Función **index_of** que retorne el índice de la primera ocurrencia de un String dentro de una lista de Strings. En caso
@@ -69,7 +69,7 @@ System.out.println(remove("Blue", colors2));
 ```
 
 
-## 1.2 Sets
+## 2.2 Sets
 
 Clasificar Cócteles y Mocktails.
 El evento incluirá tanto cócteles como "mocktails" - bebidas mezcladas sin alcohol.
@@ -88,7 +88,7 @@ System.out.println(checkDrinks("Shirley Tonic", Arrays.asList("cinnamon stick", 
 ```
 
 
-## 1.3 Maps
+## 2.3 Maps
 
 En este ejercicio, administrarás un sistema de inventario.
 
