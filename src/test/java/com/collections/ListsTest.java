@@ -1,13 +1,13 @@
-package com.template;
+package com.collections;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class AppTest {
+class ListsTest {
 
     @Test
     void testAdd() {
-        App app = new App();
-        assertEquals(5, app.add(2, 3));
+        Lists list = new Lists();
+        assertEquals(5, list.add(2, 3));
     }
 }

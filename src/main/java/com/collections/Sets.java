@@ -1,6 +1,6 @@
-package com.template;
+package com.collections;
 
-public class App {
+public class Sets {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
