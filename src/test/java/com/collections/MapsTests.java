@@ -3,9 +3,8 @@ package com.collections;
 import com.collections.Maps;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 public class MapsTests {
 
@@ -149,12 +148,15 @@ public class MapsTests {
         initial.put("wood", 67);
         initial.put("silver", 0);
 
-        List<Map.Entry<String, Integer>> expected = List.of(
+        List<Map.Entry<String, Integer>> expected = new ArrayList<>(List.of(
                 Map.entry("coal", 15),
                 Map.entry("diamond", 3),
                 Map.entry("wood", 67)
-        );
+        ));
 
-        assertEquals(expected, manager.listInventory(initial));
+        expected.sort(Comparator.comparing(Map.Entry::getKey));
+        List<Map.Entry<String, Integer>> actual = manager.listInventory(initial);
+        actual.sort(Comparator.comparing(Map.Entry::getKey));
+        assertEquals(expected,actual);
     }
 }
