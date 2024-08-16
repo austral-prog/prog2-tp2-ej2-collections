@@ -2,9 +2,6 @@
 
 ## 1.1 Lists
 
-
-## Ejercicio 2
-
 Dado la siguiente consigna, implementar las siguientes funciones:
 * Función **index_of** que retorne el índice de la primera ocurrencia de un String dentro de una lista de Strings. En caso
   de no encontrarse ninguna retorna el valor -1.
@@ -74,24 +71,7 @@ System.out.println(remove("Blue", colors2));
 
 ## 1.2 Sets
 
-Tú y tus socios comerciales operan una pequeña empresa de catering. Acaban de acordar organizar un evento para un club de cocina local que presenta platos "favoritos del club". El club no tiene experiencia en la organización de eventos grandes y necesita ayuda con la organización, compra, preparación y servicio. Han decidido escribir algunos pequeños scripts en Python para acelerar todo el proceso de planificación.
-
-### 2.1. Limpiar los ingredientes repetidos del plato
-Las recetas del evento se agregaron desde diversas fuentes y parece que los ingredientes tienen entradas duplicadas (o más) -- ¡no quieres terminar comprando elementos en exceso!
-Antes de que pueda comenzar la compra y la cocina, la lista de ingredientes de cada plato necesita ser "limpiada".
-
-Implementa la función `clean_ingredients` que tome el nombre de un plato y una lista de ingredientes.
-
-Esta función debería devolver una tupla con el nombre del plato como primer elemento, seguido por el conjunto depurado de ingredientes.
-
-```python
->>> clean_ingredients('Punjabi-Style Chole', ['onions', 'tomatoes', 'ginger paste', 'garlic paste', 'ginger paste', 'vegetable oil', 'bay leaves', 'cloves', 'cardamom', 'cilantro', 'peppercorns', 'cumin powder', 'chickpeas', 'coriander powder', 'red chili powder', 'ground turmeric', 'garam masala', 'chickpeas', 'ginger', 'cilantro'])
-
->>> ('Punjabi-Style Chole', {'garam masala', 'bay leaves', 'ground turmeric', 'ginger', 'garlic paste', 'peppercorns', 'ginger paste', 'red chili powder', 'cardamom', 'chickpeas', 'cumin powder', 'vegetable oil', 'tomatoes', 'coriander powder', 'onions', 'cilantro', 'cloves'})
-```
-
-
-### 2.2 Clasificar Cócteles y Mocktails
+Clasificar Cócteles y Mocktails.
 El evento incluirá tanto cócteles como "mocktails" - bebidas mezcladas sin alcohol.
 Necesitas asegurarte de que las bebidas "mocktail" sean verdaderamente no alcohólicas y que los cócteles realmente incluyan alcohol.
 
@@ -99,16 +79,12 @@ Implementa la función `check_drinks` que tome el nombre de una bebida y una lis
 La función debería devolver el nombre de la bebida seguido de "Mocktail" si la bebida no tiene ingredientes alcohólicos, y el nombre de la bebida seguido de "Cocktail" si la bebida incluye alcohol.
 Para los propósitos de este ejercicio, los cócteles solo incluirán alcoholes del set ALCOHOLS en sets_categories_data.py:
 
-```python
->>> from sets_categories_data import ALCOHOLS 
+```java
+System.out.println(checkDrinks("Honeydew Cucumber", Arrays.asList("honeydew", "coconut water", "mint leaves", "lime juice", "salt", "english cucumber")));
+// Imprime: Honeydew Cucumber Mocktail
 
->>> check_drinks('Honeydew Cucumber', ['honeydew', 'coconut water', 'mint leaves', 'lime juice', 'salt', 'english cucumber'])
-...
-'Honeydew Cucumber Mocktail'
-
->>> check_drinks('Shirley Tonic', ['cinnamon stick', 'scotch', 'whole cloves', 'ginger', 'pomegranate juice', 'sugar', 'club soda'])
-...
-'Shirley Tonic Cocktail'
+System.out.println(checkDrinks("Shirley Tonic", Arrays.asList("cinnamon stick", "scotch", "whole cloves", "ginger", "pomegranate juice", "sugar", "club soda")));
+// Imprime: Shirley Tonic Cocktail
 ```
 
 
